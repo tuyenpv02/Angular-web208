@@ -1,0 +1,10 @@
+<h2>Danh sách</h2>
+
+<ul>
+    <li *ngFor="let h of heros">
+        <img [src]="h.img" width="70px" alt="">
+        {{h.id}} - {{h.name}} - 
+        <span *ngIf="h.gender==1">Nam</span>
+        <span *ngIf="h.gender==0">Nữ</span>
+    </li>
+</ul>
