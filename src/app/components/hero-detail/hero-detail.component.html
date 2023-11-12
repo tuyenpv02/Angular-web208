@@ -1,2 +1,10 @@
-<p>hero-detail works!</p>
-
+<div class="col-4">
+    <div class="card" style="width: 18rem;">
+        <img [src]="heroData.img" width="70px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{heroData.name}}</h5>
+          <a (click)="removeEventFire()" class="btn btn-sm btn-primary">Xóa</a>
+          <a  class="btn btn-sm btn-success mx-2">Sửa</a>
+        </div>
+      </div>
+</div>
